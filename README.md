@@ -1,4 +1,0 @@
-geocode
-=======
-
-Python Geocoder
