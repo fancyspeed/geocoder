@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Geocoder by DenisCarriere</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Geocoder</h1>
+        <p>A pure Python Geocoding module made easy.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/DenisCarriere/geocoder" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/DenisCarriere/geocoder/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/DenisCarriere/geocoder/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="geocoder--" class="anchor" href="#geocoder--" aria-hidden="true"><span class="octicon octicon-link"></span></a>Geocoder <a href="http://badge.fury.io/py/geocoder"><img src="https://badge.fury.io/py/geocoder.png" alt="badge"></a> <a href="https://travis-ci.org/DenisCarriere/geocoder"><img src="https://travis-ci.org/DenisCarriere/geocoder.png?branch=master" alt="travis"></a>
+</h1>
+
+<p>Geocoder is a MIT Licensed Geocoding library, written in Python, 
+simple and consistant.</p>
+
+<p>Many online providers such as Google &amp; Bing have geocoding services,
+these providers do not include Python libraries and have different 
+JSON responses between each other.</p>
+
+<p>Consistant JSON responses from various providers.</p>
+
+<div class="highlight highlight-python"><pre><span class="pl-k">&gt;&gt;&gt;</span> g <span class="pl-k">=</span> geocoder.google(<span class="pl-s1"><span class="pl-pds">'</span>New York City<span class="pl-pds">'</span></span>)
+<span class="pl-k">&gt;&gt;&gt;</span> g.latlng
+[<span class="pl-c1">40.7127837</span>, <span class="pl-k">-</span><span class="pl-c1">74.0059413</span>]
+<span class="pl-k">&gt;&gt;&gt;</span> g.state
+<span class="pl-s1"><span class="pl-pds">'</span>New York<span class="pl-pds">'</span></span>
+<span class="pl-k">&gt;&gt;&gt;</span> g.json
+...</pre></div>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>GeoJSON Support</li>
+<li>OpenStreetMap Support</li>
+<li>Command Line Interface</li>
+<li>Confidence Score</li>
+<li>Well Known Text Support</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>To install Geocoder, simply:</p>
+
+<div class="highlight highlight-bash"><pre>$ pip install geocoder</pre></div>
+
+<h2>
+<a id="providers" class="anchor" href="#providers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Providers</h2>
+
+<ul>
+<li>ArcGIS ESRI</li>
+<li>Bing</li>
+<li>CanadaPost</li>
+<li>FreeGeoIP</li>
+<li>Geocoder.ca</li>
+<li>Geonames</li>
+<li>Google</li>
+<li>MapQuest</li>
+<li>MaxMind</li>
+<li>Nokia</li>
+<li>OpenCage</li>
+<li>OSM (OpenStreetMap)</li>
+<li>Ottawa (GeoOttawa)</li>
+<li>TomTom</li>
+<li>Yahoo</li>
+</ul>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>Documentation is available at <a href="http://deniscarriere.github.io/geocoder">http://deniscarriere.github.io/geocoder</a></p>
+
+<h2>
+<a id="topic-not-available" class="anchor" href="#topic-not-available" aria-hidden="true"><span class="octicon octicon-link"></span></a>Topic not available?</h2>
+
+<p>If you cannot find a topic you are looking for, please feel free to ask me <a href="https://twitter.com/DenisCarriere">@DenisCarriere</a> or post them on the <a href="https://github.com/DenisCarriere/geocoder/issues">Github Issues Page</a>.</p>
+
+<h2>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h2>
+
+<p>This project is free &amp; open source, it would help greatly for you guys reading this to contribute, here are some of the ways that you can help make this Python Geocoder better.</p>
+
+<h2>
+<a id="feedback" class="anchor" href="#feedback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feedback</h2>
+
+<p>Please feel free to give any feedback on this module. If you find any bugs or any enhancements to recommend please send some of your comments/suggestions to the <a href="https://github.com/DenisCarriere/geocoder/issues">Github Issues Page</a>.</p>
+
+<h2>
+<a id="twitter" class="anchor" href="#twitter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Twitter</h2>
+
+<p>Speak up on Twitter <a href="https://twitter.com/DenisCarriere">@DenisCarriere</a> and tell me how you use this Python Geocoder. New updates will be pushed to Twitter Hashtags <a href="https://twitter.com/search?q=%23geocoder">#geocoder</a>.</p>
+
+<h2>
+<a id="thanks-to" class="anchor" href="#thanks-to" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thanks to</h2>
+
+<p>A big thanks to all the people that help contribute: </p>
+
+<ul>
+<li><a href="https://github.com/flebel">@flebel</a></li>
+<li><a href="https://github.com/patrickyan">@patrickyan</a></li>
+<li><a href="https://github.com/themiurgo">@themiurgo</a></li>
+<li><a href="https://github.com/lambda-conspiracy">@esy</a></li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/DenisCarriere">DenisCarriere</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-59050829-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
